@@ -30,8 +30,26 @@ CREATE TABLE dept_manager(
 	PRIMARY KEY (dept_no)
 );
 
+-- Drop the existing primary key constraint on dept_no
+ALTER TABLE dept_manager
+DROP CONSTRAINT dept_manager_pkey;
 
+-- Add a new primary key constraint on emp_no
+ALTER TABLE dept_manager
+ADD PRIMARY KEY (emp_no);
 
+CREATE TABLE dept_emp(
+	emp_no INT NOT NULL,
+	dept_no VARCHAR(40) NOT NULL,
+	FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
+	FOREIGN KEY (dept_no) REFERENCES departments(dept_no),
+	PRIMARY KEY (emp_no, dept_no)
+);
 
-
+CREATE TABLE salaries(
+	emp_no INT NOT NULL,
+	salary INT NOT NULL,
+	FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
+	PRIMARY KEY (emp_no)
+);
 
