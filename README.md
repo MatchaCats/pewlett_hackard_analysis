@@ -8,6 +8,7 @@ Data Engineering: Building SQL tables, defining data types, keys, and constraint
 Data Analysis: Writing SQL queries to answer specific business questions about the data, such as identifying managers, department details, and unique employee traits.
 
 Key Features
+
 Entity Relationship Diagram (ERD): Visual representation of the database structure.
 Schema Design: Accurate table definitions with primary and foreign keys, data types, and constraints to ensure integrity.
 Data Importation: Seamless integration of raw CSV data into a SQL database.
@@ -22,6 +23,7 @@ Which employees shared common last names, and how often?
 Insights into departments like Sales and Development and their employees.
 
 Technologies Used
+
 SQL: Database design, management, and querying.
 Entity Relationship Diagram Tools: For schema modeling.
 CSV: Raw data format for importation
